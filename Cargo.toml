@@ -181,9 +181,9 @@ harness = false
 opt-level = 1
 
 [profile.release]
-debug = true
-incremental = true
-lto = "thin"
+opt-level = 3 
+codegen-units = 1
+lto = "fat"
 
 # windows-gnu should use it until rust-lang/rust#98302 is not fixed
 [profile.release-no-lto]
